@@ -52,6 +52,9 @@ bảng TRANSITION:
     ---------|----------|----------|----------|----------|-----|
     ...      |          |          |          |          |     |
 Giá trị tại TRAINSITION[state][action] trả về state tiếp theo.
+Nếu trả về -1 thì action đó không đưa state đến state nào khác,
+nếu khác -1, thì giá trị đó chính là state tiếp theo sau khi thực
+thi action xong.
 """
 TRANSITION = []
 for s in range(len(STATE)):
