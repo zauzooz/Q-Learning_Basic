@@ -42,7 +42,7 @@ def QLearning(STATE, ACTION, REWARD, TRANSITION, LEARNING_RATE=0.1, DISCOUNT_FAC
     print(i)
     return Q_TABLE
 
-print('Wait for Training....')
+print('Đợi tao train tí xong ...')
 df = pd.DataFrame(QLearning(
     STATE=STATE,
     ACTION=ACTION,
@@ -54,4 +54,4 @@ df = pd.DataFrame(QLearning(
 df.columns=[f'action_{i}' for i in ACTION]
 df.index=[f'state_{i}' for i in STATE]
 df.to_csv('parameter\Q_TABLE.csv')
-print("Ya, I'v finished.")
+print("Xong rồi nè mày!!!")

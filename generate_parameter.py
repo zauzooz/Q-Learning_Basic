@@ -1,5 +1,4 @@
 import numpy as np
-import pylab as pl
 import pandas as pd
 import pickle
 from random import randint, choice
